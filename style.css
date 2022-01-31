@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
 .app-container {
   background: #dbe9ff;
   min-height: 100vh;
@@ -31,14 +35,11 @@
   text-transform: uppercase;
   text-align: center;
   justify-content: center;
-}
-
-.border-buttom1 {
-  border-bottom: 2px solid rgb(20, 47, 110);
-}
-
-.border-buttom2 {
   border-bottom: 2px solid rgba(42, 70, 133, 0.2);
+}
+
+.active {
+  border-bottom: 2px solid rgb(20, 47, 110);
 }
 
 .calendar-container {
@@ -48,4 +49,19 @@
   grid-template-columns: repeat(7, auto);
   background: #100f64;
   padding: 20px;
+}
+
+.date-btn {
+  padding: 15px;
+  background: none;
+  color: #8096c1;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  border-radius: 0.3rem;
+}
+
+.date-btn:hover {
+  color: #ffffff;
+  background: #254381;
 }
