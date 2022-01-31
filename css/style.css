@@ -8,7 +8,7 @@ button {
 }
 
 .app-container {
-  background: #dbe9ff;
+  background: #d6e3f8;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -26,7 +26,7 @@ button {
 .switch-button {
   color: #041a4b;
   display: flex;
-  padding: 40px;
+  padding: 10px 40px 60px 40px;
   background: none;
   border: none;
   cursor: pointer;
@@ -47,7 +47,7 @@ button {
   border-radius: 10px;
   display: grid;
   grid-template-columns: repeat(7, auto);
-  background: #100f64;
+  background: #0b204c;
   padding: 20px;
 }
 
