@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  background: #dbe9ff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.switch-container {
+  display: flex;
+  margin-top: -400px;
+  margin-bottom: 20px;
+  min-width: 400px;
+}
+
+.switch-button {
+  color: #041a4b;
+  display: flex;
+  padding: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  min-width: 220px;
+  border-color: #223c75;
+  text-transform: uppercase;
+  text-align: center;
+  justify-content: center;
+}
+
+.border-buttom1 {
+  border-bottom: 2px solid rgb(20, 47, 110);
+}
+
+.border-buttom2 {
+  border-bottom: 2px solid rgba(42, 70, 133, 0.2);
+}
+
+.calendar-container {
+  min-width: 400px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  background: #100f64;
+  padding: 20px;
+}
