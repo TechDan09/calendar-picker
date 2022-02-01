@@ -18,7 +18,6 @@ button {
 
 .switch-container {
   display: flex;
-  margin-top: -400px;
   margin-bottom: 20px;
   min-width: 400px;
 }
