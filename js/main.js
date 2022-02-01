@@ -22,6 +22,7 @@ function handleClick(e) {
       currentEnd.classList.remove('end-date');
     }
     e.target.classList.add('end-date');
+    styleInbetween(startDate, endDate);
     return;
   }
 
@@ -36,10 +37,19 @@ function handleClick(e) {
 }
 
 function styleforward(e) {
-  calendarButtons.forEach((btn) => btn.classList.remove('between-dates'));
-  if (startDate > 0) {
-    for (let i = startDate; i < e.target.textContent; i++) {
-      calendarButtons[i].classList.add('between-dates');
+  if (endDate === -1) {
+    calendarButtons.forEach((btn) => btn.classList.remove('between-dates'));
+    if (startDate > 0) {
+      for (let i = startDate; i < e.target.textContent; i++) {
+        calendarButtons[i].classList.add('between-dates');
+      }
     }
+  }
+}
+
+function styleInbetween(start, end) {
+  calendarButtons.forEach((btn) => btn.classList.remove('between-dates'));
+  for (let i = start; i < end; i++) {
+    calendarButtons[i].classList.add('between-dates');
   }
 }
